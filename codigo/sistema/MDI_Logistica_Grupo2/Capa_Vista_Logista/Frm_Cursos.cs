@@ -28,10 +28,10 @@ namespace Capa_Vista_Logista
             };
 
             string[] columnas = {
+                    "cursos",
                     "codigo_curso",
                     "nombre_curso",
                     "estatus_curso"
-
             };
 
             string[] sEtiquetas = {

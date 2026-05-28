@@ -40,7 +40,7 @@ namespace Capa_Vista_Logista
             this.navegador1.Name = "navegador1";
             this.navegador1.SAlias = null;
             this.navegador1.SEtiquetas = null;
-            this.navegador1.Size = new System.Drawing.Size(1180, 611);
+            this.navegador1.Size = new System.Drawing.Size(1180, 488);
             this.navegador1.SNombreTabla = null;
             this.navegador1.TabIndex = 0;
             // 
