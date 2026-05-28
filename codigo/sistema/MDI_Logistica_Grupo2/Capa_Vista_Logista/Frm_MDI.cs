@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Capa_Vista_Seguridad;
 using Capa_Controlador_Seguridad;
 using System.Drawing.Imaging;
-
+using Capa_Vista_Reporteador;
 
 namespace Capa_Vista_Logista
 {
@@ -167,6 +167,55 @@ namespace Capa_Vista_Logista
             Frm_LOGIN login = new Frm_LOGIN();
             login.ShowDialog();
             this.Close();
+        }
+
+        private void herramientasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Reportes Reporteador = new Frm_Reportes();
+            Reporteador.MdiParent = this;
+            Reporteador.Show();
+        }
+
+        private void bitacoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Bitacora Bitacora = new Frm_Bitacora();
+            Bitacora.MdiParent = this;
+            Bitacora.Show();
+        }
+
+        private void cambiarContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_cambiar_contrasena cambiar_Contrasena = new Frm_cambiar_contrasena(Capa_Controlador_Seguridad.Cls_Usuario_Conectado.iIdUsuario);
+            cambiar_Contrasena.MdiParent = this;
+            cambiar_Contrasena.Show();
+        }
+
+        private void crearUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Usuario frm = new Frm_Usuario();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void mantenimientoAplicacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAplicacion formAplicacion = new FrmAplicacion();
+            formAplicacion.MdiParent = this;
+            formAplicacion.Show();
+        }
+
+        private void permisosAplicacionUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_asignacion_aplicacion_usuario asig_app_user = new Frm_asignacion_aplicacion_usuario();
+            asig_app_user.MdiParent = this;
+            asig_app_user.Show();
+        }
+
+        private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_asignacion_aplicacion_usuario asig_app_user = new Frm_asignacion_aplicacion_usuario();
+            asig_app_user.MdiParent = this;
+            asig_app_user.Show();
         }
     }
 }
